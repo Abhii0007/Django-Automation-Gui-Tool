@@ -28,7 +28,7 @@ class window(QMainWindow):
         
 
         self.form.pushButton_help.clicked.connect(self.helper)
-
+        self.form.lineEdit_command.returnPressed.connect(self.execute)
         
         self.form.pushButton_show_databse.clicked.connect(self.database_show)
         self.form.pushButton_runserver.clicked.connect(self.abhi)
@@ -103,15 +103,15 @@ class window(QMainWindow):
 
         
     def flush_databse(self):
-        self.executer('python manage.py flush')
+        self.form.lineEdit_command.setText('python manage.py flush')
     def show_migration(self):
-        self.executer('python manage.py showmigrations')
+        self.form.lineEdit_command.setText('python manage.py showmigrations')
     def apply_migration(self):
-        self.executer('python manage.py migrate')
+        self.form.lineEdit_command.setText('python manage.py migrate')
     def make_migration(self):
-        self.executer('python manage.py makemigrations')
+        self.form.lineEdit_command.setText('python manage.py makemigrations')
     def check(self):
-        self.executer('python manage.py check')
+        os.system('python manage.py check')
         
     def executer(self,txt0):
         os.system(txt0)
