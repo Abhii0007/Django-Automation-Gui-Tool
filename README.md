@@ -3,6 +3,7 @@ Django Master v1.0 is an intuitive GUI tool designed to simplify the Comand base
 
 This project streamlines essential Django tasks, including database management, running the development server, accessing the admin interface, and much more.
 
+![Screenshot home window](Screenshot 2024-12-06 092053.png)
 
 
 🚀 Features:-
