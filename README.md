@@ -9,6 +9,8 @@ This project streamlines essential Django tasks, including database management, 
 ![Screenshot home window](images/screenshot1.png)
 
 
+#Integration with custom Browser for instant testing,
+![Screenshot home window](images/screenshot3.png)
 🚀 Features:-
 
     Run Django Server: Start or stop the Django development server with a single click.
